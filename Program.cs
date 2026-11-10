@@ -125,30 +125,30 @@
 // Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 // Console.WriteLine($"Итоговый балл: {totalScore}");
 
-Console.WriteLine();
-Console.WriteLine("Задание 1. Чётное или нечётное");
-
-Console.Write("Введите целое число: ");
-int numberToCheck = int.Parse(Console.ReadLine());
-bool isEven = numberToCheck % 2 == 0;
-Console.WriteLine($"Число {numberToCheck} чётное: {isEven}");
-
 // Console.WriteLine();
-// Console.WriteLine("Задание 2. Инкремент в выражениях");
+// Console.WriteLine("Задание 1. Чётное или нечётное");
 
-// int boxes = 4;
-// // Постфиксный ++ сначала присваивает переменной старое значение boxes, затем увеличивает boxes.
-// int postfixValue = boxes++;
-// Console.WriteLine($"boxes++: в postfixValue попало старое значение {postfixValue}, boxes теперь {boxes}");
+// Console.Write("Введите целое число: ");
+// int numberToCheck = int.Parse(Console.ReadLine());
+// bool isEven = numberToCheck % 2 == 0;
+// Console.WriteLine($"Число {numberToCheck} чётное: {isEven}");
 
-// // Префиксный ++ сначала увеличивает boxes и только потом сохраняет новое значение.
-// int prefixValue = ++boxes;
-// Console.WriteLine($"++boxes: сначала boxes стало {boxes}, это значение попало в prefixValue = {prefixValue}");
+Console.WriteLine();
+Console.WriteLine("Задание 2. Инкремент в выражениях");
 
-// int points = 20;
-// // Слева направо: points++ даёт 20 и повышает points до 21, а ++points повышает его до 22 и даёт 22.
-// int combinedValue = points++ * 2 + ++points;
-// Console.WriteLine($"points++ * 2 + ++points = {combinedValue}; points после выражения = {points}");
+int boxes = 4;
+// Постфиксный ++ сначала присваивает переменной старое значение boxes, затем увеличивает boxes.
+int postfixValue = boxes++;
+Console.WriteLine($"boxes++: в postfixValue попало старое значение {postfixValue}, boxes теперь {boxes}");
+
+//Префиксный ++ сначала увеличивает boxes и только потом сохраняет новое значение.
+int prefixValue = ++boxes;
+Console.WriteLine($"++boxes: сначала boxes стало {boxes}, это значение попало в prefixValue = {prefixValue}");
+
+int points = 20;
+// Слева направо: points++ даёт 20 и повышает points до 21, а ++points повышает его до 22 и даёт 22.
+int combinedValue = points++ * 2 + ++points;
+Console.WriteLine($"points++ * 2 + ++points = {combinedValue}; points после выражения = {points}");
 
 // Console.WriteLine();
 // Console.WriteLine("Задание 3. Калькулятор скидки");
