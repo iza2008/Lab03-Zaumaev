@@ -1,19 +1,19 @@
-Console.WriteLine("Банковский счёт");
+// Console.WriteLine("Банковский счёт");
 
-double balance = 1000;
-Console.WriteLine($"Начальный баланс: {balance}");
+// double balance = 1000;
+// Console.WriteLine($"Начальный баланс: {balance}");
 
-balance += 500; // пополнение
-Console.WriteLine($"После пополнения на 500: {balance}");
+// balance += 500; // пополнение
+// Console.WriteLine($"После пополнения на 500: {balance}");
 
-balance -= 200; // покупка
-Console.WriteLine($"После покупки на 200: {balance}");
+// balance -= 200; // покупка
+// Console.WriteLine($"После покупки на 200: {balance}");
 
-balance *= 1.05; // начисление 5% процентов
-Console.WriteLine($"После начисления 5%: {balance}");
+// balance *= 1.05; // начисление 5% процентов
+// Console.WriteLine($"После начисления 5%: {balance}");
 
-balance /= 2; // разделили счёт пополам с партнёром
-Console.WriteLine($"После деления пополам: {balance}");
+// balance /= 2; // разделили счёт пополам с партнёром
+// Console.WriteLine($"После деления пополам: {balance}");
 
 // Console.WriteLine();
 // Console.WriteLine("Постфикс vs префикс");
@@ -67,15 +67,22 @@ Console.WriteLine($"После деления пополам: {balance}");
 // Console.WriteLine($"Может пересдать (оценка ИЛИ посещаемость): {canRetakeExam}");
 // Console.WriteLine($"Нет долгов: {isDebtFree}");
 
-// Console.WriteLine();
-// Console.WriteLine("Короткое замыкание");
+Console.WriteLine();
+Console.WriteLine("Короткое замыкание");
 
-// bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
-// Console.WriteLine($"Результат: {resultAnd}");
+bool CheckAndPrint(string label, bool value)
+{
+    Console.WriteLine($" Вычисляется: {label}");
+    return value;
+}
+ Console.WriteLine("Проверяем || (первый операнд false):");
+bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
+Console.WriteLine($"Результат: {resultAnd}");
 
-// Console.WriteLine();
-// bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
-// Console.WriteLine($"Результат: {resultOr}");
+Console.WriteLine();
+Console.WriteLine("Проверяем && (первый операнд false):");
+bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
+Console.WriteLine($"Результат: {resultOr}");
 
 // Console.WriteLine();
 // Console.WriteLine("Приоритет операций");
